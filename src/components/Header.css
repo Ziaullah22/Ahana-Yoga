@@ -1,0 +1,110 @@
+/* Header.css */
+.header {
+    background-color: white; /* Light background color */
+    padding: 1rem 0; /* Padding top and bottom */
+    font-family: sans-serif;
+    height: 60px;
+  }
+  
+  .header .icon-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .icon-text svg {
+    margin-right: 8px; /* Space between icon and text */
+    color: #f65d5d;
+    font-size: 20px;                                
+  }
+  
+  .header .icon-text span {
+    font-size: 14px; /* Font size for text */
+  }
+  
+  .header .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: #000;
+  }
+  
+  .header .dropdown-menu {
+    min-width: 150px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Large devices (desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+    .header .icon-text span {
+      font-size: 13px; /* Slightly smaller text */
+    }
+  }
+  
+  /* Medium devices (tablets, 992px and up) */
+  @media (max-width: 992px) {
+    .header .icon-text {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header .icon-text span {
+      font-size: 12px; /* Smaller text */
+      margin-bottom: 4px; /* Add space between lines */
+    }
+    .header .dropdown-toggle {
+      font-size: 12px; /* Smaller dropdown text */
+    }
+  }
+  
+  /* Small devices (landscape phones, 786px and up) */
+  @media (max-width: 786px) {
+    .header .icon-text {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header .icon-text span {
+      font-size: 12px; /* Smaller text */
+    }
+    .header .dropdown-toggle {
+      font-size: 11px; /* Smaller dropdown text */
+    }
+  }
+  
+  /* Extra small devices (portrait phones, 600px and up) */
+  @media (max-width: 600px) {
+    .header {
+      padding: 0.5rem 0; /* Reduce padding */
+    }
+    .header .icon-text svg {
+        display: none;                               
+      }
+    .header .icon-text {
+        display: none;
+    }
+    .header .icon-text span {
+        display: none;
+    }
+    .header .dropdown-toggle {
+      font-size: 11px; /* Smaller dropdown text */
+    }
+  }
+  
+  /* Extra small devices (portrait phones, 387px and up) */
+  @media (max-width: 387px) {
+    .header {
+      padding: 0.3rem 0; /* Reduce padding */
+    }
+    .header .icon-text svg {
+        display: none;                               
+      }
+    .header .icon-text {
+      display: none;
+    }
+    .header .icon-text span {
+      display: none;
+    }
+    .header .dropdown-toggle {
+      font-size: 10px;
+
+    }
+  }
+  

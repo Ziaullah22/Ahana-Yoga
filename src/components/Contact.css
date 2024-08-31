@@ -1,0 +1,217 @@
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.contactUs__mapContainer {
+    width: 90%;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contactUs__contentRow {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contactUs__infoColumn {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.contactUs__infoColumn h2, .contactUs__infoColumn h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contactUs__infoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contactUs__infoItem p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: gray;
+    font-family: sans-serif;
+}
+
+.contactUs__icon {
+    color: #f65d5d;
+    font-size: 20px;
+    margin-top: -15px;
+    font-family: sans-serif;
+}
+
+.contactUs__socialMedia {
+    margin-top: 75px;
+    color: rgb(85, 83, 83);
+}
+
+.contactUs__socialMedia svg {
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contactUs__formColumn {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: -300px;
+
+}
+
+.contactUs__formColumn h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 34px;
+    color: #333;
+}
+
+.contactUs__formGroup {
+    margin-bottom: 15px;
+}
+
+.contactUs__inlineGroup {
+    display: flex;
+    gap: 20px;
+}
+
+.contactUs__formGroup input,
+.contactUs__formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ebe3e3;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contactUs__formGroup textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contactUs__formGroup input::placeholder,
+.contactUs__formGroup textarea::placeholder {
+    color: rgba(128, 128, 128, 0.699);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.contactUs__submitButton {
+    width: auto;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: white;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactUs__submitButton:hover {
+    background: transparent;
+    color: #f65d5d;
+}
+
+/* Responsive Design */
+
+@media (min-width: 588px) {
+    .contactUs__contentRow {
+        flex-direction: row; /* Switch to row layout on larger screens */
+    }
+
+    .contactUs__infoColumn {
+        margin-right: 20px;
+    }
+
+    .contactUs__formColumn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 587px) {
+    .contactUs {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .contactUs__mapContainer {
+        height: 250px; /* Further reduce map height for very small screens */
+        margin-bottom: 15px; /* Adjust margin for better spacing */
+    }
+
+    .contactUs__contentRow {
+        flex-direction: column; /* Ensure columns stack vertically */
+    }
+
+    .contactUs__infoColumn,
+    .contactUs__formColumn {
+        margin: 0; /* Remove margins between columns */
+        padding: 15px; /* Reduce padding for better fit */
+    }
+
+    .contactUs__infoColumn {
+        margin-top: 250px; /* Add margin-bottom for spacing between stacked columns */
+    }
+
+    .contactUs__infoColumn h2,
+    .contactUs__infoColumn h3 {
+        font-size: 20px; /* Further reduce font size for headings */
+    }
+
+    .contactUs__infoItem p {
+        font-size: 14px; /* Reduce font size for better readability */
+    }
+
+    .contactUs__icon {
+        font-size: 18px; /* Reduce icon size for small screens */
+    }
+
+    .contactUs__socialMedia {
+        margin-top: 50px; /* Adjust margin for better spacing */
+    }
+
+    .contactUs__socialMedia svg {
+        font-size: 20px; /* Reduce icon size */
+    }
+
+    .contactUs__formColumn h2 {
+        font-size: 26px; /* Further reduce font size for form heading */
+    }
+
+    .contactUs__formGroup {
+        margin-bottom: 10px; /* Reduce margin between form groups */
+    }
+
+    .contactUs__formGroup input,
+    .contactUs__formGroup textarea {
+        padding: 8px; /* Adjust padding for form inputs */
+        font-size: 12px; /* Reduce font size for form inputs */
+    }
+
+    .contactUs__formGroup textarea {
+        height: 120px; /* Adjust height for text area */
+    }
+
+    .contactUs__submitButton {
+        padding: 8px 14px; /* Further adjust padding for smaller screens */
+        font-size: 14px; /* Ensure font size fits well */
+    }
+}

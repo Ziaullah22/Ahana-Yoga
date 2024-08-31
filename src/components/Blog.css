@@ -1,0 +1,124 @@
+/* Blog.css */
+
+.blog-main {
+    padding: 0 15px;
+}
+
+.blog-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure all cards have the same height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to card borders */
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.blog-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.blog-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.blog-description {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 0.7rem;
+    flex-grow: 1; /* Ensure description area can grow to fill available space */
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #888;
+    margin: 0.5rem 0;
+    font-family: sans-serif;
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.blog-meta span svg {
+    margin-left: 10px;
+    color: #f65d5d; /* Change icon color to red */
+    font-size: 24px;
+}
+
+.blog-btn {
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-top: 30px; /* Push the button to the bottom of the card */
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-main {
+        padding: 0 10px;
+    }
+
+    .blog-image {
+        height: 180px;
+    }
+
+    .blog-title {
+        font-size: 1.1rem;
+    }
+
+    .blog-description {
+        font-size: 0.95rem;
+    }
+
+    .blog-btn {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-card {
+        margin-bottom: 20px;
+    }
+
+    .blog-title {
+        font-size: 1rem;
+    }
+
+    .blog-description {
+        font-size: 0.85rem;
+    }
+
+    .blog-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

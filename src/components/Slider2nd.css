@@ -1,0 +1,269 @@
+.slider2nd {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    font-family: sans-serif;
+    margin-top: -50px;
+  }
+  
+  .slides2nd {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%; /* Ensures full height coverage */
+  }
+  
+  .slide2nd {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .slide2nd.active {
+    opacity: 1;
+  }
+  
+  .background-layer {
+    width: 100%;
+    height: 80%;
+    background-image: url('review-bg.jpg.webp'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .background-layer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #f65d5de1 100%, #fdb07de1 0%); /* Default slider background color */
+  }
+  
+  .slide-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+  }
+  
+  .bio {
+    font-size: 18px;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  .designer-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 20px;
+    color: #f5f5f5;
+    margin-top: 10px;
+  }
+  
+  .dots2nd {
+    position: absolute;
+    bottom: 150px; /* Position dots 20 pixels from the bottom edge */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Space between dots */
+  }
+  
+  .dot2nd {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dot2nd.active {
+    opacity: 1;
+  }
+  @media (max-width: 1280px) {
+    .slider2nd {
+      height: 700px;
+    }
+  
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .bio {
+      font-size: 20px;
+    }
+  
+    .designer-name {
+      font-size: 22px;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+    .dots2nd {
+        bottom: 120px;
+      }
+    
+      .dot2nd {
+        width: 12px;
+        height: 12px;
+      }
+  }
+  
+  @media (max-width: 992px) {
+    .slider2nd {
+      height: 600px;
+    }
+  
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+    }
+  
+    .bio {
+      font-size: 18px;
+    }
+  
+    .designer-name {
+      font-size: 20px;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+    .dots2nd {
+        bottom: 80px;
+      }
+    
+      .dot2nd {
+        width: 12px;
+        height: 12px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .slider2nd {
+      height: 600px;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .bio {
+      font-size: 16px;
+    }
+  
+    .designer-name {
+      font-size: 18px;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .dots2nd {
+      bottom: 80px;
+    }
+  
+    .dot2nd {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .slider2nd {
+      height: 530px;
+    }
+  
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .bio {
+      font-size: 14px;
+    }
+  
+    .designer-name {
+      font-size: 16px;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .dots2nd {
+      bottom: 60px;
+    }
+  
+    .dot2nd {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media (max-width: 387px) {
+    .slider2nd {
+      height: 500px;
+    }
+  
+    .profile-pic {
+      width: 70px;
+      height: 70px;
+      margin-top: 20px;
+    }
+  
+    .bio {
+      font-size: 12px;
+    }
+  
+    .designer-name {
+      font-size: 14px;
+      margin-top: 20px;
+
+    }
+  
+    .title {
+      font-size: 12px;
+    }
+  
+    .dots2nd {
+      bottom: 60px;
+    }
+  
+    .dot2nd {
+      width: 8px;
+      height: 8px;
+    }
+  }

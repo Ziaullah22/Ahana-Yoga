@@ -1,0 +1,333 @@
+.about-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-logo-img {
+    width: 40px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.about-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.about-description {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: rgb(138, 123, 123);
+    
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin-top: 100px;
+
+}
+
+.about-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+.about-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 600px;
+    height: auto;
+}
+
+.about-feature-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid rgb(241, 236, 236); /* Black border around the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.about-circle-image {
+    width: 60px;  /* Width of the image */
+    height: 60px; /* Height of the image */
+
+ 
+}
+
+
+.about-feature-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.about-feature-description {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 0;
+    color: gray;
+    margin-top: 15px;
+    width: 400px;
+}
+
+.about-button {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 50px;
+    align-self: flex-start; /* Aligns the button to the start of the column */
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease; /* Adds smooth transition */
+    border: 2px solid;
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.about-button:hover {
+    background: transparent; /* Makes the background transparent */
+    color: #f65d5d; /* Changes text color to match one of the gradient colors */
+
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 200px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+}
+@media (max-width: 1200px) {
+    .about-heading {
+        font-size: 2.2em;
+    }
+
+    .about-description {
+        font-size: 0.9em;
+    }
+
+    .about-feature {
+        width: 500px;
+    }
+
+    .about-feature-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-circle-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-feature-heading {
+        font-size: 1.6em;
+    }
+
+    .about-feature-description {
+        width: 350px;
+    }
+}
+
+/* For screens 992px and below */
+@media (max-width: 992px) {
+    .about-row {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .about-feature {
+        width: 100%;
+    }
+
+    .about-feature-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .about-circle-image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .about-feature-heading {
+        font-size: 1.5em;
+    }
+
+    .about-feature-description {
+        width: 100%;
+    }
+
+    .about-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .scroll-to-top {
+        bottom: 150px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 2em;
+    }
+
+    .about-description {
+        font-size: 0.8em;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .about-feature-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-circle-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-feature-heading {
+        font-size: 1.4em;
+    }
+
+    .about-feature-description {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .about-button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .scroll-to-top {
+        bottom: 100px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+}
+
+/* For screens 600px and below */
+@media (max-width: 600px) {
+    .about-heading {
+        font-size: 1.8em;
+    }
+
+    .about-description {
+        font-size: 0.7em;
+    }
+
+    .about-feature-image {
+        width: 120px;
+        height: 50px;
+    }
+
+    .about-circle-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-button {
+        font-size: 0.7em;
+        padding: 5px 10px;
+    }
+
+    .scroll-to-top {
+        bottom: 80px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+}
+
+/* For screens 387px and below */
+@media (max-width: 387px) {
+    .about-heading {
+        font-size: 1.6em;
+        margin-left: 30px;
+    }
+
+    .about-description {
+        font-size: 0.6em;
+    }
+
+    .about-feature-image {
+        width: 120px;
+        height: 50px;
+    }
+
+    .about-circle-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-button {
+        font-size: 0.6em;
+        padding: 4px 8px;
+        margin-left: 115px;
+
+    }
+
+    .scroll-to-top {
+        bottom: 50px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        font-size: 0.7em;
+    }
+}

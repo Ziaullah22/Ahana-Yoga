@@ -1,0 +1,213 @@
+.our-plans-container {
+    padding: 20px;
+    background: #f9f2f0;
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.our-plans-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.our-plans-paragraph {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.our-plans-row {
+    display: flex;
+    justify-content: space-between;
+ 
+    padding: 15px;
+    margin-top: 20px;
+    width: 85%;
+    margin-left: 7%;
+}
+
+.our-plans-column {
+    flex: 1;
+    padding: 0; /* Remove padding to allow customization of header and content separately */
+    text-align: center;
+    margin-right: 15px; /* Adds space between columns */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
+}
+
+.our-plans-column:last-child {
+    margin-right: 0; /* No margin on the last column */
+}
+.our-plans-column:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.plan-header {
+    padding: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.plan-header.beginner {
+    background-color: #fdb07d; /* Blue */
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-header.intermediate {
+    background-color: #fa8f70; /* Green */
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-header.advanced {
+    background-color: #f2786f; /* Orange */
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-header.professional {
+    background-color: #f65d5d; /* Red */
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-box {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    margin-top: -90px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
+.price-circle h3 {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin: 0;
+    color: #555;
+}
+
+.price-circle p {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    font-weight: normal;
+}
+.plan-description {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-weight: normal;
+    width: 150px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+.get-started-btn {
+    font-family: sans-serif;
+    display: block;
+    width: auto; /* Full width of the column */
+    padding: 10px;
+    margin-top: 20px; /* Space above the button */
+    background-color: transparent;
+    color: #f65d5d;
+    border: 2px solid #f65d5d; /* Create a transparent border to show the gradient */
+    border-radius: 40px;
+    margin-left: 20%;
+    font-weight: bold;
+
+}
+
+.get-started-btn:hover {
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: white;
+}
+
+.get-started-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .our-plans-row {
+        flex-wrap: wrap;
+    }
+
+    .our-plans-column {
+        flex: 0 0 48%; /* 2 columns on small screens */
+        margin-bottom: 20px; /* Adds space below each column */
+    }
+
+    .our-plans-column:nth-child(2n) {
+        margin-right: 0; /* No margin on the second column in each row */
+    }
+    .plan-description {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* Remove left margin */
+        font-size: 0.9rem; /* Maintain slightly smaller font size */
+        text-align: center; /* Center align text for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .our-plans-row {
+        flex-wrap: wrap;
+    }
+
+    .our-plans-column {
+        flex: 0 0 48%; /* 2 columns on small screens */
+        margin-bottom: 20px; /* Adds space below each column */
+    }
+
+    .our-plans-column:nth-child(2n) {
+        margin-right: 0; /* No margin on the second column in each row */
+    }
+    .plan-description {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* Remove left margin */
+        font-size: 0.9rem; /* Maintain slightly smaller font size */
+        text-align: center; /* Center align text for small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .our-plans-column {
+        flex: 0 0 100%; /* 1 column on extra small screens */
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+    .plan-header{
+        width: auto;
+    }
+    .plan-description {
+        width: 100%; /* Ensure full width */
+        margin-left: 0; /* No left margin */
+        font-size: 0.8rem; /* Further reduce font size */
+        text-align: center; /* Center align text for extra small screens */
+    }
+}

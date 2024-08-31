@@ -1,0 +1,101 @@
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .column {
+    flex: 1 1 25%;
+    padding: 10px;
+}
+
+.footer .logo {
+    width: 150px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.footer .heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.footer p{
+    color: gray;
+}
+
+.footer .list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .link {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.footer .link:hover {
+    color: #f65d5d;
+}
+
+.footer .email-signup {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer .email-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    width: 100px;
+}
+
+.footer .email-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer .email-button:hover {
+    background-color: #555;
+}
+
+.footer .bottom-row {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .social-media {
+    margin-bottom: 10px;
+}
+
+.footer .icon {
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .copy-right {
+    font-size: 14px;
+}

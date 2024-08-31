@@ -1,0 +1,76 @@
+.backgroundStyle {
+    background-image: url('page-top-bg.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 338px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.overlayStyle {
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5de7 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.backgroundStyle h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.backgroundStyle p{
+    font-family: sans-serif;
+    width: 1000px;
+    font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+    .backgroundStyle {
+        height: auto; /* Adjust height for screens narrower than 992px */
+    }
+
+    .backgroundStyle h1 {
+        font-size: 1.75rem; /* Adjust font size for medium screens */
+    }
+
+    .backgroundStyle p {
+        font-size: 0.85rem; /* Adjust font size for medium screens */
+        width: 90%; /* Reduce width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .backgroundStyle {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .backgroundStyle h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .backgroundStyle p {
+        font-size: 0.9rem; /* Smaller font size */
+        width: 90%; /* Reduce width */
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    .backgroundStyle {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .backgroundStyle h1 {
+        font-size: 1.5rem; /* Even smaller font size */
+    }
+
+    .backgroundStyle p {
+        font-size: 0.8rem; /* Smaller font size */
+        width: 100%; /* Full width */
+    }
+}

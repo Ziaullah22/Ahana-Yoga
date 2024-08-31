@@ -1,0 +1,279 @@
+/* Ensure you have imported Times Roman and Sans Serif fonts in your global styles */
+
+.events-container {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.events-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.events-paragraph {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: rgb(138, 123, 123);
+}
+
+.events-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    width: 90%;
+    margin-left: 70px;
+}
+
+.events-video {
+    flex: 0 1 40%; /* Adjust the width of the video container */
+    margin-right: 20px;
+}
+
+.events-video iframe {
+    width: 600px; /* Ensure iframe takes up full width of its container */
+    height: 600px; /* Adjust height if needed */
+    border-radius: 20px;
+}
+
+.events-details {
+    flex: 1 1 60%; /* Adjust the width of the details container */
+    margin-left: 20px;
+    text-align: left;
+}
+
+.event-row {
+    display: flex;
+    margin-bottom: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 175px;
+    margin-top: 2px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
+}
+.event-row:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.event-image {
+    flex: 1;
+    margin-right: 10px;
+    height: 175px;
+
+}
+
+.event-image img {
+    width: 200px;
+    height: 175px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.event-content {
+    flex: 2;
+}
+
+.event-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.795);
+    text-decoration: none;
+}
+
+.event-heading:hover {
+    color: #f65d5d;
+}
+
+.event-content p {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: gray;
+}
+
+.event-content svg {
+    margin-right: 10px;
+    color: #f65d5d;
+}
+@media (max-width: 1200px) {
+    .events-row {
+        flex-direction: column;
+        margin-left: 0;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .events-video {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space below the video */
+        margin-left: 90px;
+    }
+
+    .events-details {
+        flex: 1 1 100%;
+        margin-left: 140px;
+    }
+
+    .events-video iframe {
+        width: 600px; /* Make sure iframe takes full width */
+        height: 600px; /* Adjust height based on the aspect ratio */
+    }
+}
+
+@media (max-width: 992px) {
+    .events-heading {
+        font-size: 2em;
+    }
+
+    .events-row {
+        flex-direction: column;
+        margin-left: 0;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .events-video {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space below the video */
+        margin-left: 90px;
+    }
+
+    .events-details {
+        flex: 1 1 100%;
+        margin-left: 140px;
+    }
+
+    .events-video iframe {
+        width: 600px; /* Make sure iframe takes full width */
+        height: 600px; /* Adjust height based on the aspect ratio */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .events-heading {
+        font-size: 1.8em;
+    }
+
+    .events-row {
+        margin-left: 10px;
+        flex-direction: column;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .events-video,
+    .events-details {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .events-video iframe {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .event-row {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .events-heading {
+        font-size: 1.8em;
+    }
+
+    .events-row {
+        margin-left: 10px;
+        flex-direction: column;
+        
+    }
+
+    .events-video,
+    .events-details {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .events-video iframe {
+        height: 400px; /* Adjust height for smaller screens */
+        width: fit-content;
+        margin-left: -30px;
+    }
+
+    .event-row {
+        height: auto;
+        flex-direction: column;
+        margin-left: -100px;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 4px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 387px) {
+    .events-heading {
+        font-size: 1.8em;
+    }
+
+    .events-row {
+        margin-left: 10px;
+        flex-direction: column;
+    }
+
+    .events-video,
+    .events-details {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .events-video iframe {
+        height: 400px; /* Adjust height for smaller screens */
+        width: fit-content;
+        margin-left: -50px;
+    }
+
+    .event-row {
+        height: auto;
+        flex-direction: column;
+        margin-left: -100px;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 4px;
+        border-radius: 10px;
+    }
+}

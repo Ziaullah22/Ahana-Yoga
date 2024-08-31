@@ -1,0 +1,399 @@
+.classes-container {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background: #f9f2f0;
+}
+
+.classes-header {
+    margin-bottom: 20px;
+}
+
+.classes-logo {
+    width: 40px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.classes-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.classes-description {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: rgb(138, 123, 123);
+}
+
+.classes-slider {
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classes-slider .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.classes-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.classes-card {
+    width: 350px !important;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    height: 510px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.055);
+    transition: box-shadow 0.3s ease;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classes-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.classes-card-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 20%;
+}
+
+.classes-card-content {
+    padding: 10px;
+    height: calc(100% - 250px);
+}
+
+.classes-card-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.classes-card-heading:hover {
+    color: #f65d5d;
+}
+
+.classes-card-date-time {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.classes-card-date-time i {
+    color: #f65d5d;
+    margin-right: 8px;
+}
+
+.classes-card-date-time .date {
+    margin-right: 20px;
+}
+
+.classes-card-paragraph {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.classes-trainer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.classes-trainer-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: -70px;
+}
+
+.classes-trainer-info {
+    text-align: left;
+}
+
+.classes-trainer-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.classes-trainer-desc {
+    color: #f65d5d;
+    font-size: 14px;
+    margin-top: -20px;
+    font-family: sans-serif;
+}
+
+.classes-book-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #fdb07d 0%, #f65d5d 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: 2px solid;
+}
+
+.classes-book-now:hover {
+    background: transparent;
+    color: #f65d5d;
+}
+
+.slick-dots {
+    bottom: -40px;
+    text-align: center;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    background-color: transparent;
+    border: none;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    outline: none;
+}
+
+.slick-dots li button::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #f65d5d;
+    background-color: transparent;
+}
+
+.slick-dots li.slick-active button::before {
+    background-color: #f65d5d;
+    border: none;
+}
+
+@media (min-width: 1200px) {
+    .classes-slider {
+        width: 80%;
+        height: 650px; /* Slightly larger slider for desktops */
+    }
+
+    .classes-card {
+        width: 350px !important;
+        margin: 0 15px; /* More space between cards */
+    }
+
+    .classes-title {
+        font-size: 3em;
+    }
+
+    .classes-description {
+        font-size: 1.1em;
+    }
+}
+
+/* For screens between 992px and 1200px (large tablets and small desktops) */
+@media (min-width: 992px) and (max-width: 1280px) {
+    .classes-slider {
+        width: 90%;
+        height: 600px;
+    }
+
+    .classes-card {
+        width: 90% !important;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .classes-card-image {
+        width: 120px;
+        height: 120px;
+        margin-left: 30%;
+    }
+
+    .classes-title {
+        font-size: 2.2em;
+    }
+
+    .classes-description {
+        font-size: 1em;
+    }
+}
+
+/* For screens between 768px and 991px (tablets) */
+@media (max-width: 992px) and (min-width: 768px) {
+    .classes-slider {
+        width: 100%;
+        height: 550px;
+    }
+
+    .classes-card {
+        width: 90% !important;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .classes-card-image {
+        width: 120px;
+        height: 120px;
+        margin-left: 30%;
+    }
+
+    .classes-title {
+        font-size: 2em;
+    }
+
+    .classes-description {
+        font-size: 0.9em;
+    }
+    
+    .classes-card-date-time {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    
+    .classes-book-now {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-left: -30px;
+    }
+}
+
+/* For screens up to 768px (mobile phones) */
+@media (max-width: 768px) {
+    .classes-container {
+        margin-top: 50px;
+    }
+
+    .classes-logo {
+        margin-top: 50px;
+    }
+
+    .classes-title {
+        font-size: 1.8em;
+    }
+
+    .classes-description {
+        font-size: 0.8em;
+    }
+
+    .classes-slider {
+        width: 100%;
+        height: 550px;
+    }
+
+    .classes-card {
+        width: 90% !important;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .classes-card-image {
+        width: 120px;
+        height: 120px;
+        margin-left: 30%;
+    }
+
+    .classes-card-heading {
+        font-size: 22px;
+    }
+
+    .classes-card-date-time {
+        margin-left: 80px;
+        font-size: 12px;
+    }
+
+    .classes-book-now {
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+
+    .slick-dots {
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .classes-container {
+        margin-top: 50px;
+    }
+
+    .classes-logo {
+        margin-top: 50px;
+    }
+
+    .classes-title {
+        font-size: 1.8em;
+    }
+
+    .classes-description {
+        font-size: 0.8em;
+    }
+
+    .classes-slider {
+        width: 100%;
+        height: 500px; /* Adjust height for mobile */
+    }
+
+    .classes-card {
+        width: 90% !important;
+        height: auto; /* Adjust height */
+        margin: 0 auto 10px; /* Center-align and margin */
+    }
+
+    .classes-card-image {
+        width: 120px;
+        height: 120px;
+        margin-left: 30%;
+    }
+
+    .classes-card-heading {
+        font-size: 22px;
+    }
+
+    .classes-card-date-time {
+        margin-left: 80px;
+        font-size: 12px;
+    }
+
+    .classes-book-now {
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+
+    .slick-dots {
+        bottom: -20px; /* Adjust for smaller screens */
+    }
+}
